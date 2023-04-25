@@ -13,9 +13,10 @@ with open("integers.txt" , "r") as integers_file, open("double.txt" , "a") as do
             #write to even file
             double_file.write(even + "\n")
         #check if odd
-
+        elif number % 2 == 1:
             #cube the number
-
+            cubed = number ** 3
             #convert to sring
-
-            #write to even file
+            odd = str(cubed)
+            #write to odd file
+            tripple_file.write(odd + "\n")

@@ -5,13 +5,13 @@ with open("integers.txt" , "r") as integers_file, open("double.txt" , "a") as do
         #convert the lines to integeers
         number = int(line)
         #check if even
-
+        if number % 2 == 0:
             #square the number
-
+            squared = number ** 2
             #convert to sring
-
+            even = str(squared)
             #write to even file
-
+            double_file.write(even + "\n")
         #check if odd
 
             #cube the number
